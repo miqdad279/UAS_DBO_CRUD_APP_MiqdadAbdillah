@@ -19,7 +19,7 @@
         ]
       );
       echo  "<script> 
-              alert('Data Pesanan berhasil diupdate!');
+              alert('Data Peminjaman berhasil diupdate!');
               document.location.href = 'index.php';
             </script>";
     }

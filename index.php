@@ -46,10 +46,17 @@
                     <br/>
                 </div>
             </div>
-
-            <a href="create.php" class="btn btn-success bi bi-plus mb-3" style="font-family: Tekton Pro"> Tambah Data Nasabah </a>
-            <input type="button" class="btn btn-success mb-3" value="Buat Laporan" onclick="window.open('laporan-excel.php')">
-
+			
+            <div class="row justify-content-between">
+				<div class="col">
+					<a href="create.php" class="btn btn-success bi bi-plus mb-3" style="font-family: Tekton Pro"> Tambah Data Peminjaman </a>
+					<input type="button" class="btn btn-success mb-3" value="Buat Laporan" onclick="window.open('laporan-excel.php')">
+				</div>
+				<div class="col" align="right">
+					<a href="deleteAll.php" class="btn btn-danger mb-3" style="font-family: Tekton Pro"> Delete Semua Data </a>
+				</div>
+			</div>
+			
 			<div class="table-responsive">
 				<table class="table table-striped">
 					<thead>
@@ -69,7 +76,7 @@
 					    require 'config.php';
 					    $koperasi = $collection->find();
 					    foreach ($koperasi as $rest) {
-                        echo "<tr class='text-center'";
+							echo "<tr class='text-center'";
                         echo "<td>";
 					    echo "<td>".$rest->no."</td>";
 					    echo "<td>".$rest->id_anggota."</td>";
@@ -81,12 +88,12 @@
 					    echo "<td>".$rest->status."</td>";
 					    echo "<td>";
 					    echo "<a href ='edit.php?id=".$rest->_id."'class='btn btn-warning' onclick = 'return confirm('Yakin Data Akan DiUpdate ?');''> Update </a>";
-					  	echo "</td>";
+						echo "</td>";
 					    echo "<td>";
 					    echo "<a href ='delete.php?id=".$rest->_id."'class='btn btn-danger' onclick = 'return confirm('Yakin Data Akan Dihapus ?');''> Delete </a>";
-					  	echo "</td>";
+						echo "</td>";
 					    echo "</tr>";
-					    }
+					}
 				    ?>
 				</table>
 			</div>

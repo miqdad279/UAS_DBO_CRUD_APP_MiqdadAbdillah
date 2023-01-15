@@ -4,10 +4,11 @@
       $rest = $collection->findOne(['_id' => new MongoDB\BSON\ObjectID($_GET['id'])]);
    }
    if(isset($_POST['submit'])){
-   require 'config.php';
-   $collection->deleteOne(['_id' => new MongoDB\BSON\ObjectID($_GET['id'])]);
+   $mongo = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+   $command = new MongoDB\Driver\Command(["drop" => "koperasi"]);
+   $mongo->executeCommand("UAS_MiqdadAbdillah", $command);
    echo  "<script> 
-            alert('Data Peminjaman berhasil dihapus!');
+            alert('Semua Data Peminjaman berhasil dihapus!');
             document.location.href = 'index.php';
          </script>";
    }
@@ -53,13 +54,12 @@
    <div class="container col-md-8">
       <div class="row justify-content-center">
          <div class="col">
-            <h3 class="text-center mb-4">Delete Data Peminjaman</h3>
-            <h5 class="mb-4"> Apakah anda yakin akan menghapus data no <?php echo "$rest->no"; ?> dengan nama <?php echo "$rest->nama_lengkap"; ?> ? </h5>
+            <h3 class="text-center mb-4">Delete Semua Data Peminjaman</h3>
+            <h5 class="mb-4"> Apakah anda yakin akan menghapus semua data ? </h5>
          </div>
          <form method="POST">
             <div class="form-group mb-3" align="center">
                <button type="submit" name="submit" class="btn btn-danger"> Delete </button>
-               <input type="hidden" value="<?php echo "$rest->id_anggota"; ?>" class="form-control" name="id_anggota">
                <a href="index.php" class="btn btn-success"> Cancel </a>
             </div>
          </form>

@@ -12,7 +12,7 @@
         'status' => $_POST['status'],
       ]);
       echo  "<script> 
-              alert('Data Pesanan berhasil ditambahkan!');
+              alert('Data Peminjaman berhasil ditambahkan!');
               document.location.href = 'index.php';
             </script>";
    }
@@ -61,7 +61,7 @@
     <div class="row" style="text-align: center;">
                 <div class="col">
                     <img src="loan.png" width="150" class="mb-5">
-                    <h3 class="text-center">Tambahkan Data Nasabah</h3>
+                    <h3 class="text-center">Tambahkan Data Peminjaman</h3>
                     <br/>
                 </div>
             </div>
