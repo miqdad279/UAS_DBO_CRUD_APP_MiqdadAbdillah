@@ -76,32 +76,32 @@
              
             <tr>
               <td for="id_anggota">ID Anggota</td>
-              <td><input type="text" class="form-control" name="id_anggota" required="required" placeholder="P01"></td>
+              <td><input type="text" class="form-control" name="id_anggota" required="required" placeholder="ID001"></td>
             </tr>
              
              <tr>
               <td for="nama_lengkap">Nama Lengkap</td>
-              <td><input type="text" class="form-control" name="nama_lengkap" required="required" placeholder="Nama Lengkap Nasabah"></td>
+              <td><input type="text" class="form-control" name="nama_lengkap" required="required" placeholder="Nama Lengkap"></td>
             </tr>
              
             <tr>
               <td for="tgl_peminjaman">Tanggal Peminjaman</td>
-              <td><input type="text" class="form-control" name="tgl_peminjaman" required="required" placeholder="1 Januari 2023"></td>
+              <td><input type="text" class="form-control" name="tgl_peminjaman" required="required" placeholder="dd-mm-yyyy"></td>
             </tr>
 
             <tr>
               <td for="tgl_peminjaman">Tanggal Tempo</td>
-              <td><input type="text" class="form-control" name="tgl_tempo" required="required" placeholder="Desember 2023"></td>
+              <td><input type="text" class="form-control" name="tgl_tempo" required="required" placeholder="dd-mm-yyyy"></td>
             </tr>
 
             <tr>
               <td for="besar_peminjaman">Besar Peminjaman</td>
-              <td><input type="text" class="form-control" name="besar_pinjaman" required="required" placeholder="1000000"></td>
+              <td><input type="text" class="form-control" name="besar_pinjaman" required="required" placeholder="Jumlah Pinjaman"></td>
             </tr>
              
             <tr>
               <td for="lama_angsuran">Lama Angsuran</td>
-              <td><input type="text" class="form-control" name="lama_angsuran" required="required" placeholder="12 Bulan"></td>
+              <td><input type="text" class="form-control" name="lama_angsuran" required="required" placeholder="Angsuran"></td>
             </tr>
 
             <tr>
@@ -109,8 +109,8 @@
               <td>
                 <div class="form-group">
                     <select class="form-control" name="status" required="required">
-                        <option>Belum Lunas</option>
-                        <option>Lunas</option>
+                        <option>BELUM LUNAS</option>
+                        <option>LUNAS</option>
                     </select>
                 </div>
               </td>
