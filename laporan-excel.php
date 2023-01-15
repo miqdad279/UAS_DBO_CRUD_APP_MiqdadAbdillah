@@ -3,7 +3,7 @@
 header("Content-type: application/vnd-ms-excel");
 header("Content-Disposition: attachment; filename=laporan-koperasi-simpin-syariah.xlsx"); 
 ?>
-<p align="center" style="font-weight:bold;font-size:16pt">Laporan Koperasi Simpan Pinjam</p>
+<p align="center" style="font-weight:bold;font-size:16pt">Laporan Koperasi SIMPIN Syariah</p>
 	<div class="table-responsive">
 		<table border="1">
 			<thead>
@@ -12,6 +12,7 @@ header("Content-Disposition: attachment; filename=laporan-koperasi-simpin-syaria
 					<th>Kode Peminjaman</th>
 					<th>Nama Lengkap</th>
 					<th>Tanggal Peminjaman</th>
+					<th>Tanggal Tempo</th>
 					<th>Besar Pinjaman</th>
 					<th>Lama Angsuran</th>
 					<th>Status</th>
@@ -26,7 +27,8 @@ header("Content-Disposition: attachment; filename=laporan-koperasi-simpin-syaria
 				echo "<td>".$rest->kode_peminjaman."</td>";
 				echo "<td>".$rest->nama_lengkap."</td>";
 				echo "<td>".$rest->tgl_peminjaman."</td>";
-				echo "<td>".$rest->besar_peminjaman."</td>";
+				echo "<td>".$rest->tgl_tempo."</td>";
+				echo "<td>".$rest->besar_pinjaman."</td>";
 				echo "<td>".$rest->lama_angsuran."</td>";
 				echo "<td>".$rest->status."</td>";
 				echo "</tr>";

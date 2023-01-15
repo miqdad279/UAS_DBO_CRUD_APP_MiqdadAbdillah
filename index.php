@@ -58,6 +58,7 @@
 							<th>Kode Peminjaman</th>
 							<th>Nama Lengkap</th>
 							<th>Tanggal Peminjaman</th>
+							<th>Tanggal Tempo</th>
 							<th>Besar Pinjaman</th>
 							<th>Lama Angsuran</th>
 							<th>Status</th>
@@ -74,7 +75,8 @@
 					    echo "<td>".$rest->kode_peminjaman."</td>";
 					    echo "<td>".$rest->nama_lengkap."</td>";
 					    echo "<td>".$rest->tgl_peminjaman."</td>";
-					    echo "<td>".$rest->besar_peminjaman."</td>";
+					    echo "<td>".$rest->tgl_tempo."</td>";
+					    echo "<td>".$rest->besar_pinjaman."</td>";
 					    echo "<td>".$rest->lama_angsuran."</td>";
 					    echo "<td>".$rest->status."</td>";
 					    echo "<td>";
