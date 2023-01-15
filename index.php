@@ -42,12 +42,13 @@
             <div class="row" style="text-align: center;">
                 <div class="col">
                     <img src="loan.png" width="150" class="mb-5">
-                    <h3 class="text-center">Koperasi Simpan Pinjam</h3>
+                    <h3 class="text-center">Koperasi SIMPIN Syariah</h3>
                     <br/>
                 </div>
             </div>
 
             <a href="create.php" class="btn btn-success bi bi-plus mb-3" style="font-family: Tekton Pro"> Tambah Data Nasabah </a>
+            <input type="button" class="btn btn-success mb-3" value="Buat Laporan" onclick="window.open('laporan-excel.php')">
 
 			<div class="table-responsive">
 				<table class="table table-striped">
@@ -80,7 +81,7 @@
 					    echo "<a href ='edit.php?id=".$rest->_id."'class='btn btn-warning' onclick = 'return confirm('Yakin Data Akan DiUpdate ?');''> Update </a>";
 					  	echo "</td>";
 					    echo "<td>";
-					    echo "<a href ='delete.php?id=".$rest->_id."'class='btn btn-danger' onclick = 'return confirm('Yakin Data Akan Dihapus ?');''> Remove </a>";
+					    echo "<a href ='delete.php?id=".$rest->_id."'class='btn btn-danger' onclick = 'return confirm('Yakin Data Akan Dihapus ?');''> Delete </a>";
 					  	echo "</td>";
 					    echo "</tr>";
 					    }
