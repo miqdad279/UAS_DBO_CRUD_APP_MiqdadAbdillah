@@ -9,7 +9,7 @@ header("Content-Disposition: attachment; filename=laporan-koperasi-simpin-syaria
 			<thead>
 				<tr class="text-center">
 					<th>No</th>
-					<th>Kode Peminjaman</th>
+					<th>ID Anggota</th>
 					<th>Nama Lengkap</th>
 					<th>Tanggal Peminjaman</th>
 					<th>Tanggal Tempo</th>
@@ -24,7 +24,7 @@ header("Content-Disposition: attachment; filename=laporan-koperasi-simpin-syaria
 				foreach ($koperasi as $rest) {
 				echo "<tr class='text-center'";
 				echo "<td>".$rest->no."</td>";
-				echo "<td>".$rest->kode_peminjaman."</td>";
+				echo "<td>".$rest->id_anggota."</td>";
 				echo "<td>".$rest->nama_lengkap."</td>";
 				echo "<td>".$rest->tgl_peminjaman."</td>";
 				echo "<td>".$rest->tgl_tempo."</td>";

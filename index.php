@@ -55,7 +55,7 @@
 					<thead>
 						<tr class="text-center" style="background-color: #198754; color: white">
 							<th>No</th>
-							<th>Kode Peminjaman</th>
+							<th>ID Anggota</th>
 							<th>Nama Lengkap</th>
 							<th>Tanggal Peminjaman</th>
 							<th>Tanggal Tempo</th>
@@ -72,7 +72,7 @@
                         echo "<tr class='text-center'";
                         echo "<td>";
 					    echo "<td>".$rest->no."</td>";
-					    echo "<td>".$rest->kode_peminjaman."</td>";
+					    echo "<td>".$rest->id_anggota."</td>";
 					    echo "<td>".$rest->nama_lengkap."</td>";
 					    echo "<td>".$rest->tgl_peminjaman."</td>";
 					    echo "<td>".$rest->tgl_tempo."</td>";
