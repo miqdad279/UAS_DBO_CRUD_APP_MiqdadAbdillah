@@ -54,8 +54,13 @@
    <div class="container col-md-8">
       <div class="row justify-content-center">
          <div class="col">
-            <h3 class="text-center mb-4">Delete Semua Data Peminjaman</h3>
-            <h5 class="mb-4"> Apakah anda yakin akan menghapus semua data ? </h5>
+            <div class="row" style="text-align: center;">
+               <div class="col">
+                  <img src="remove.png" width="80" class="mb-5">
+                  <h3 class="text-center mb-4">Delete Semua Data Peminjaman</h3>
+                  <h5 class="mb-4"> Apakah anda yakin akan menghapus semua data ? </h5>
+               </div>
+            </div>
          </div>
          <form method="POST">
             <div class="form-group mb-3" align="center">
